@@ -8,7 +8,7 @@
     <h1>Coupons</h1>
     <% @coupons.each do |coupon| %>
     <p>
-      <%= link_to coupon.coupon_code, @coupon %>
+      <%= link_to coupon.coupon_code, coupon_path(coupon.id) %>
 <%= coupon.store %>
     </p>
     <div class="container">
