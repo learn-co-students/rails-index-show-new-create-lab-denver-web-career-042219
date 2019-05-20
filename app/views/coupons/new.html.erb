@@ -1,0 +1,18 @@
+<h1>Coupons#new</h1>
+
+<%= form_for :coupon, url: coupons_path(@coupon) do |f| %>
+
+<p>
+  <%= f.label :coupon_code %><br>
+  <%= f.text_field :coupon_code %>
+</p>
+
+    <p>
+      <%= f.label :store %>
+      <%= f.text_field :store %>
+    </p>
+<p>
+<%= f.submit %>
+</p>
+
+<% end %>
