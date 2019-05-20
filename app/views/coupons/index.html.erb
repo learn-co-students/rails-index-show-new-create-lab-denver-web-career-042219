@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Coupons</h1>
+    <% @coupons.each do |coupon| %>
+    <p>
+<%= coupon.coupon_code %> -
+<%= link_to "Coupon", coupon_path(coupon) %>
+<%= coupon.store %>
+    </p>
+    <div class="container">
+
+    </div>
+    <% end %>
+  </body>
+</html>
